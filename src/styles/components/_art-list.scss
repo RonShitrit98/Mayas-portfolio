@@ -1,0 +1,17 @@
+.art-list{
+    height: inherit;
+    overflow-y:scroll;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
+
+    img{
+        filter: grayscale(100%);
+        &:hover{
+            cursor: pointer;
+            filter: none;
+            transition: all, 0.5s;
+        }
+    }
+}

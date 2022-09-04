@@ -1,10 +1,18 @@
 <template>
-<main-header></main-header>
+  <section>
+    <main-header></main-header>
+    <div class="main-content">
+      <art-preview></art-preview>
+      <contact-details></contact-details>
+    </div>
+  </section>
 </template>
 
 <script>
-import mainHeader from '../components/main-header.vue'
-export default{
-    components:{mainHeader}
-}
+import mainHeader from "../components/main-header.vue";
+import artPreview from "../components/art-preview.vue";
+import ContactDetails from "../components/contact-details.vue";
+export default {
+  components: { mainHeader, artPreview, ContactDetails },
+};
 </script>

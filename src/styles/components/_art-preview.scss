@@ -1,0 +1,27 @@
+.art-prev {
+  display: flex;
+  justify-content: space-between;
+  // gap: 65px;
+
+  img {
+    width: 100%;
+  }
+
+  .art-list-box {
+    // margin-left: 65px;
+    width: 26vw;
+
+    position: relative;
+    max-height: 90vh;
+    display: flex;
+    padding-left: 73px;
+    .art-prev-title {
+      position: absolute;
+      transform-origin: top left;
+      left: 0;
+      top: 0;
+      transform: rotate(-90deg) translateX(-100%);
+      font-size: 48px;
+    }
+  }
+}
