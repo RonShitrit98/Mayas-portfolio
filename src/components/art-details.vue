@@ -1,25 +1,21 @@
 <template>
-    <div class="artDetails">
-<h1>{{art}}</h1>
+  <div :class="['art-detail', group.id]">
+    <div class="img-box">
+      <div v-for="img in group.imgs" :key="img.url">
+        <img :src="img.url" alt="" />
+        <p >{{ img.description }}</p>
+      </div>
     </div>
+    <div class="description-box">
+      <h1>{{ group.title }}</h1>
+      <p>{{ group.description }}</p>
+    </div>
+  </div>
 </template>
 
 <script>
-    import { artService } from '../services/art-service';
-    export default {
-        data(){
-            return{
-                art: undefined,
-            }
-        },
-        methods:{
-            findArt(){
-                this.art = artService.findArt(this.$route.params.id)
-            }
-        },
-        created(){
-            console.log('dkfgjdfkgj')
-            this.findArt()
-        }
-    }
+export default {
+  props: { group: Object },
+  methods: {},
+};
 </script>

@@ -1,18 +1,18 @@
 <template>
-<div class="art-list">
-    <div v-for="item in artItems.items" :key="item.title">
-    <img :src="item.imgs[0]" @click="showArt(item.id)">
+  <div class="art-list">
+    <div v-for="item in artItems" :key="item.title">
+      <img :src="item.imgs[0].url" @click="showArt(item.id)" />
+    </div>
   </div>
-</div>
 </template>
 
 <script>
-
 export default {
   props: ["artItems"],
-  methods:{
-    showArt(itemId){
-    }
-  }
+  methods: {
+    showArt(itemId) {
+      this.$emit("showArt", itemId);
+    },
+  },
 };
 </script>
