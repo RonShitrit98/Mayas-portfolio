@@ -7,13 +7,11 @@
 </template>
 
 <script>
-import router from '../router';
 
 export default {
   props: ["artItems"],
   methods:{
     showArt(itemId){
-      this.$router.push(`/${itemId}`)
     }
   }
 };
