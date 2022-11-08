@@ -10,14 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //   justify-content: space-between;
   .img-box {
     height: 100%;
-    // width: 60%;
     display: flex;
     img {
       max-height: 100%;
-      // object-fit: contain;
       &:not(:first-child) {
         margin-left: 30px;
       }
@@ -38,14 +35,36 @@
     }
   }
   &.f {
+    padding: 40px;
+    justify-content: flex-start;
     .img-box {
-      img:nth-child(3) {
-        align-self: flex-end;
-        max-height: 30%;
+      max-width: 63vw;
+      align-items: flex-end;
+      height: 100%;
+      div {
+        height: inherit;
+        display: flex;
+        align-items: flex-end;
+        img {
+          // width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        &:nth-child(3) {
+          max-height: 30%;
+        }
+        &:not(:last-child) {
+          margin-right: 45px;
+        }
       }
     }
   }
-  &.a {
+  &.a,
+  &.c,
+  &.d,
+  &.g,
+  &.h,
+  &.i {
     .description-box {
       margin: auto;
     }
@@ -53,6 +72,15 @@
       img {
         padding: 20px;
       }
+    }
+  }
+  &.d,
+  &.h,
+  &.i {
+    .img-box {
+      display: flex;
+      align-items: center;
+      max-width: 55vw;
     }
   }
   &.b {
@@ -80,5 +108,60 @@
         }
       }
     }
+  }
+  &.e {
+    padding: 60px;
+    justify-content: flex-start;
+    .img-box {
+      padding: 20px 0px;
+      // align-items: center;
+      // height: 100%;
+      height: auto;
+      // max-height: 88vh;
+      max-width: 55%;
+      // overflow: hidden;
+      div {
+        height: 100%;
+        width: auto;
+        &:not(:first-child) {
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+      // gap: 10px;
+      // display: grid;
+      // grid-template-columns: auto auto;
+      // grid-template-rows: 1fr 1fr 1fr 1fr;
+      // max-width: 57.5%;
+      // max-height: fit-c/ontent;
+      display: grid;
+      grid-template-columns: 1fr repeat(1, 0.67fr);
+      grid-template-rows: repeat(4, auto);
+      grid-column-gap: 10px;
+      // grid-row-gap: 10px;
+      div:first-child {
+        // grid-row-start: 1;
+        // grid-row-end: 5;
+        grid-row: 1/5;
+      }
+    }
+    .description-box {
+      margin: auto;
+    }
+  }
+  &.i {
+    .img-box {
+      width: 55vw;
+      div {
+        margin: auto;
+        img {
+          width: 30vw;
+        }
+      }
+    }
+  }
+  &.j{
+    
   }
 }

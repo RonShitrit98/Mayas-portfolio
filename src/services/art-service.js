@@ -10,7 +10,7 @@ const ART_LIST = [
     id: "a",
     title: "Yearly self-portrait, October 2021",
     description: "Drawn and painted in Procreate.",
-    imgs: [{url:"./src/assets/imgs/illustrations/1.png"}],
+    imgs: [{ url: "./src/assets/imgs/illustrations/1.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -45,7 +45,7 @@ const ART_LIST = [
     description: `Fanart for the book trilogy “His Dark Materials” by Philip Pullman.
   
           Drawn in Procreate and Photoshop.`,
-    imgs: [{url:"./src/assets/imgs/illustrations/5.png"}],
+    imgs: [{ url: "./src/assets/imgs/illustrations/5.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -56,7 +56,7 @@ const ART_LIST = [
           Pastels on brown paper, 50x25 cm
           
           Done as part of “Illustration basics” course at Bezalel Academy, guided by David Polonsky.`,
-    imgs: ["./src/assets/imgs/illustrations/6.png"],
+    imgs: [{ url: "./src/assets/imgs/illustrations/6.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -67,11 +67,11 @@ const ART_LIST = [
   
           Done in “Concept Art” course at IAC.`,
     imgs: [
-      "./src/assets/imgs/illustrations/7.png",
-      "./src/assets/imgs/illustrations/8.png",
-      "./src/assets/imgs/illustrations/9.png",
-      "./src/assets/imgs/illustrations/10.png",
-      "./src/assets/imgs/illustrations/11.png",
+      { url: "./src/assets/imgs/illustrations/7.png" },
+      { url: "./src/assets/imgs/illustrations/8.png" },
+      { url: "./src/assets/imgs/illustrations/9.png" },
+      { url: "./src/assets/imgs/illustrations/10.png" },
+      { url: "./src/assets/imgs/illustrations/11.png" },
     ],
     imgsToDisplay: 1,
   },
@@ -81,9 +81,9 @@ const ART_LIST = [
     title: `YMCA logo redesign and two banners for a fictive social event `,
     description: `Done as part of “Graphic Design” course at Bezalel Academy, guided by Sonja Olitsky.`,
     imgs: [
-      "./src/assets/imgs/graphic/1.png",
-      "./src/assets/imgs/graphic/2.png",
-      "./src/assets/imgs/graphic/3.png",
+      { url: "./src/assets/imgs/graphic/1.png" },
+      { url: "./src/assets/imgs/graphic/2.png" },
+      { url: "./src/assets/imgs/graphic/3.png" },
     ],
     imgsToDisplay: 3,
   },
@@ -93,7 +93,7 @@ const ART_LIST = [
     title: `Poster for Tel-Aviv’s pride parade, combining the term “Erotic” and the sculpture 
           “Fire and Water”`,
     description: `Done as part of “Graphic Design” course at Bezalel Academy, guided by Lahav Halevy.`,
-    imgs: ["./src/assets/imgs/graphic/4.png"],
+    imgs: [{ url: "./src/assets/imgs/graphic/4.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -101,7 +101,7 @@ const ART_LIST = [
     id: "h",
     title: `Vinyl cover for the tune “Define Dancing” by Thomas Newman`,
     description: `Done as part of “Shape and Form” course at Bezalel Academy, guided by Sharon Etgar.`,
-    imgs: ["./src/assets/imgs/graphic/5.png"],
+    imgs: [{ url: "./src/assets/imgs/graphic/5.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -111,7 +111,7 @@ const ART_LIST = [
     description: `Branding a fictive korean street-food style bakery called “BUN”, starting with the logo.
   
           Done as part of “Branding Basics” course at Bezalel Academy, guided by Dar Laor.`,
-    imgs: ["./src/assets/imgs/graphic/10.png"],
+    imgs: [{ url: "./src/assets/imgs/graphic/10.png" }],
     imgsToDisplay: 1,
   },
   {
@@ -121,10 +121,10 @@ const ART_LIST = [
     description: `
           Done as part of “Typography” course at Bezalel Academy, guided by Edna Liberati.`,
     imgs: [
-      "./src/assets/imgs/graphic/6.png",
-      "./src/assets/imgs/graphic/7.png",
-      "./src/assets/imgs/graphic/8.png",
-      "./src/assets/imgs/graphic/9.png",
+      { url: "./src/assets/imgs/graphic/6.png" },
+      { url: "./src/assets/imgs/graphic/7.png" },
+      { url: "./src/assets/imgs/graphic/8.png" },
+      { url: "./src/assets/imgs/graphic/9.png" },
     ],
     imgsToDisplay: 1,
   },
