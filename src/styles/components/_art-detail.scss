@@ -161,7 +161,35 @@
       }
     }
   }
-  &.j{
-    
+  &.j {
+    padding: 60px;
+    justify-content: flex-start;
+    .description-box {
+      margin: auto;
+    }
+    .img-box {
+      justify-self: center;
+      // height: inherit;
+      max-width: 55vw;
+      // max-width: fit-content;
+      // max-height: fit-content;
+      display: grid;
+      grid-template-columns: 0.33fr 1fr;
+      grid-template-rows: repeat(3, 32%);
+      gap: 20px;
+      div {
+        img{
+          object-fit: contain;
+        }
+        &:nth-child(2) {
+          grid-column-start: 2;
+          grid-row: 2;
+        }
+        &:nth-child(3) {
+          grid-column-start: 2;
+          grid-row: 3;
+        }
+      }
+    }
   }
 }
