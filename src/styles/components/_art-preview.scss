@@ -1,8 +1,10 @@
 .art-prev {
+  width: 50vw;
   position: relative;
   display: flex;
   justify-content: space-between;
-  // gap: 65px;
+  margin-right: 150px;
+  gap: 65px;
 
   img {
     width: 100%;
@@ -10,7 +12,7 @@
 
   .art-list-box {
     // margin-left: 65px;
-    width: 26vw;
+    // width: 26vw;
 
     position: relative;
     max-height: 90vh;
@@ -19,10 +21,25 @@
     .art-prev-title {
       position: absolute;
       transform-origin: top left;
-      left: 0;
+      left: -10px;
       top: 0;
       transform: rotate(-90deg) translateX(-100%);
-      font-size: 48px;
+      font-size: rem(55px);
+      // bottom: 22px;
+      // margin-bottom:22px ;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%);
+top: 50%;
+left: -33px;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-right: 17px solid $mainFontColor;
+      }
     }
   }
 }

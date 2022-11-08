@@ -1,17 +1,19 @@
 <template>
-  <section class="art-prev">
-    <div class="art-list-box">
-      <h1 class="art-prev-title">ILLUSTRATONS</h1>
-      <art-list @showArt="showArt" :artItems="illustrations" />
-    </div>
-    <div class="art-list-box">
-      <h1 class="art-prev-title">GRAPHIC DESIGN</h1>
-      <art-list @showArt="showArt" :artItems="garphicDesigns" />
-    </div>
+  <section>
+    <section class="art-prev">
+      <div class="art-list-box">
+        <h1 class="art-prev-title">ILLUSTRATONS</h1>
+        <art-list @showArt="showArt" :artItems="illustrations" />
+      </div>
+      <div class="art-list-box">
+        <h1 class="art-prev-title">GRAPHIC DESIGN</h1>
+        <art-list @showArt="showArt" :artItems="garphicDesigns" />
+      </div>
+    </section>
     <art-details
-      v-if="selectedGroup"
-      :group="selectedGroup"
-      @click="selectedGroup = null"
+    v-if="selectedGroup"
+    :group="selectedGroup"
+    @click="selectedGroup = null"
     />
   </section>
 </template>

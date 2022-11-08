@@ -1,4 +1,5 @@
 .art-list{
+    width: 450px;
     height: inherit;
     overflow-y:scroll;
     &::-webkit-scrollbar {
@@ -7,6 +8,7 @@
       
 
     img{
+        width: 100%;
         filter: grayscale(100%);
         &:hover{
             cursor: pointer;
