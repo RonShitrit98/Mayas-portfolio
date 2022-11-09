@@ -4,8 +4,9 @@
       :class="['img-list', artItems[0].type]"
       v-for="img in getImgsToDisplay"
       :key="img.url"
+      @click="showArt(img.itemId)"
     >
-      <img :src="img.url" @click="showArt(img.itemId)" />
+      <img :src="img.url" />
     </div>
   </div>
 </template>
