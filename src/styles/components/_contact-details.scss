@@ -1,3 +1,47 @@
-.contact-info{
-
+.contact-info {
+  position: relative;
+  hr {
+    position: absolute;
+    border-top: 3px solid $mainFontColor;
+    margin-bottom: 30px;
+    width: 100%;
+    top: -35px;
+  }
+  .info-box {
+    p {
+      margin-bottom: 20px;
+    }
+    margin-left: 45px;
+    font-family: bellota;
+    font-size: rem(20px);
+    .contact-info-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      div:first-child{
+        display: flex;
+        align-items: flex-end;
+      }
+      img:first-child {
+        margin-right: 20px;
+        height: 107px;
+        width: 107px;
+        justify-self: flex-start;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  h1 {
+    font-size: rem(36px);
+    position: absolute;
+    transform-origin: top left;
+    width: fit-content;
+    white-space: nowrap;
+    max-width: 80vw;
+    left: -15px;
+    top: 0;
+    transform: rotate(-90deg) translateX(-100%);
+  }
 }
