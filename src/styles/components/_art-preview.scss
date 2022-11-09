@@ -1,11 +1,10 @@
 .art-prev {
-  width: 50vw;
+  width: 55vw;
   position: relative;
   display: flex;
   justify-content: flex-start;
-  margin-right: 150px;
+  margin-right: 65px;
   gap: 65px;
-
   img {
     width: 100%;
   }
@@ -18,10 +17,13 @@
     .art-prev-title {
       position: absolute;
       transform-origin: top left;
-      left: -10px;
+      width: fit-content;
+      white-space:nowrap;
+      max-width: 80vw;
+      left: 0;
       top: 0;
       transform: rotate(-90deg) translateX(-100%);
-      font-size: rem(55px);
+      font-size: rem(48px);
 
       &:before {
         content: "";
