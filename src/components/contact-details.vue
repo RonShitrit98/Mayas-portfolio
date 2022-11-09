@@ -17,12 +17,11 @@
           <div>
             <img src="../assets/imgs/meee.png" />
             <div>
-              <p>Phone: +972 54-249-8868</p>
-              <p>E-Mail: maya97abr@gmail.com</p>
+              <p>Phone: <span>+972 54-249-8868</span></p>
+              <p>E-Mail: <span>maya97abr@gmail.com</span></p>
             </div>
           </div>
           <img src="../assets/imgs/image 2.png" alt="" />
-          <!-- <icon-base icon="insta"></icon-base> -->
         </div>
       </div>
     </div>
@@ -30,6 +29,5 @@
 </template>
 
 <script>
-// import IconBase from "./icon-base.vue";
 export default { components: {} };
 </script>

@@ -18,7 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      div:first-child{
+      div:first-child {
         display: flex;
         align-items: flex-end;
       }
@@ -30,6 +30,9 @@
       }
       p {
         margin-bottom: 0px;
+        span {
+          font-weight: bold;
+        }
       }
     }
   }
