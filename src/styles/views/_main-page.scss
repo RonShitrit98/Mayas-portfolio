@@ -1,4 +1,12 @@
-.main-content{
+.main-page {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  height: 100vh;
+  .main-content {
+      padding:0px 65px;
+    grid-row: 2;
+    height: 75vh;
     display: flex;
     justify-content: space-between;
+  }
 }

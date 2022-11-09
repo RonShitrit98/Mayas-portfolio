@@ -1,3 +1,17 @@
-.main-header{
-    height: 200px;
+.main-header {
+    padding: 65px 65px 0px 65px;
+    height: 25vh;
+  .main-logo {
+    font-size: rem(96px);
+    line-height: 80px;
+  }
+  .main-nav {
+    font-size: rem(40px);
+    a {
+        margin-left: 5px;
+      font-family: bellota-light;
+      color: $mainFontColor;
+      text-decoration: none;
+    }
+  }
 }

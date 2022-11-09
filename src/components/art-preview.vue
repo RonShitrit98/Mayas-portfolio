@@ -1,5 +1,4 @@
 <template>
-  <section>
     <section class="art-prev">
       <div class="art-list-box">
         <h1 class="art-prev-title">ILLUSTRATONS</h1>
@@ -15,7 +14,6 @@
     :group="selectedGroup"
     @click="selectedGroup = null"
     />
-  </section>
 </template>
 
 <script>
