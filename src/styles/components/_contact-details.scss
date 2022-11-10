@@ -1,13 +1,12 @@
 .contact-info {
   position: relative;
+  max-width: 640px;
   hr {
     position: absolute;
     border-top: 3px solid $mainFontColor;
     margin-bottom: 30px;
-    // width: 100%;
-    width: 500px;
+    width: 100%;
     top: -35px;
-    // z-index: 1;
   }
   .info-box {
     p {

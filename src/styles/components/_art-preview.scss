@@ -12,33 +12,31 @@
     position: relative;
     max-height: inherit;
     overflow: hidden;
-    padding-left: 4.2vw;
+    padding-left: 3.7vw;
     width: 24vw;
 
-      .art-prev-title {
-        // display: none;
+    .art-prev-title {
+      position: absolute;
+      transform-origin: top left;
+      white-space: nowrap;
+
+      left: 0;
+      top: 0;
+      transform: rotate(-90deg) translateX(-100%);
+      font-size: 2.7vw;
+
+      &:before {
+        content: "";
         position: absolute;
-        transform-origin: top left;
-        white-space: nowrap;
-        // max-width: 80vw;
-
-        left: 0;
-        top: 0;
-        transform: rotate(-90deg) translateX(-100%);
-        font-size: 3vw;
-
-        &:before {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 0;
-          transform: translate(-50%, -50%);
-          top: 50%;
-          left: -1.5vw;
-          border-top: 0.8vw solid transparent;
-          border-bottom: 0.8vw solid transparent;
-          border-right: 0.8vw solid $mainFontColor;
-        }
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: -1.5vw;
+        border-top: 0.8vw solid transparent;
+        border-bottom: 0.8vw solid transparent;
+        border-right: 0.8vw solid $mainFontColor;
       }
     }
   }
+}

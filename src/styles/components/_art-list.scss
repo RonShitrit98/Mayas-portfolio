@@ -1,7 +1,5 @@
 .art-list {
   max-height: inherit;
-  // height: fit-content;
-  // max-width: 40vw;
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(6, auto);

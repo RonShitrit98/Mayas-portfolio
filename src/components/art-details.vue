@@ -24,7 +24,6 @@ export default {
   methods: {
     getDescription(desc) {
       return desc.split(".");
-  
     },
   },
 };
