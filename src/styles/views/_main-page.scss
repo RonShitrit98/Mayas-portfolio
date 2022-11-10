@@ -11,3 +11,24 @@
     max-width: inherit;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .main-page {
+    justify-content: flex-start;
+    gap: 100px;
+    .main-content{
+      max-height: 80vh;
+    }
+    .art-prev,
+    .contact-info {
+      height: 80vh;
+      opacity: 0;
+      display: none;
+      transition: opacity 0.5s;
+      &.selected {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+}

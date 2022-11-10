@@ -24,7 +24,7 @@
         align-items: flex-end;
       }
       img:first-child {
-        margin-right: 20px;
+        margin-right: rem(20px);
         height: 107px;
         width: 107px;
         justify-self: flex-start;
@@ -38,7 +38,7 @@
     }
   }
   h1 {
-    font-size: rem(36px);
+    font-size:rem(35px);
     position: absolute;
     transform-origin: top left;
     width: fit-content;

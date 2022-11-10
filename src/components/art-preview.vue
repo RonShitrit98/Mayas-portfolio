@@ -12,12 +12,15 @@
       </div>
       <art-list @showArt="showArt" :artItems="garphicDesigns" />
     </div>
+    <section>
+  
+      <art-details
+      v-if="selectedGroup"
+      :group="selectedGroup"
+      @click="selectedGroup = null"
+      />
+    </section>
   </section>
-  <art-details
-    v-if="selectedGroup"
-    :group="selectedGroup"
-    @click="selectedGroup = null"
-  />
 </template>
 
 <script>
