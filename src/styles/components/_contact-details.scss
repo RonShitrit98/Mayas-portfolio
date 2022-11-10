@@ -4,8 +4,10 @@
     position: absolute;
     border-top: 3px solid $mainFontColor;
     margin-bottom: 30px;
-    width: 100%;
+    // width: 100%;
+    width: 500px;
     top: -35px;
+    // z-index: 1;
   }
   .info-box {
     p {

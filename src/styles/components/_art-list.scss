@@ -1,7 +1,8 @@
 .art-list {
-  // height: inherit;
-  width: 21vw;
-  overflow-y: scroll;
+  max-height: inherit;
+  // height: fit-content;
+  // max-width: 40vw;
+  overflow: scroll;
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(5, auto);
@@ -25,7 +26,6 @@
       &:nth-child(3),
       &:nth-child(6),
       &:last-child {
-        
         filter: none;
         position: relative;
         grid-column: span 2;
@@ -47,7 +47,7 @@
       &:nth-child(3) {
         height: 7vw;
         img {
-            height:inherit;
+          height: inherit;
           object-fit: cover;
         }
       }

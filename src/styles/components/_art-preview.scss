@@ -1,43 +1,44 @@
 .art-prev {
   position: relative;
   display: flex;
-  justify-content: flex-start;
-  margin-right: 65px;
-  gap: 65px;
-  height: inherit;
-
+  margin-right: 5vw;
+  gap: 3vw;
+  max-height: 80vh;
   img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .art-list-box {
     position: relative;
-    max-height: 90vh;
-    display: flex;
-    padding-left: 73px;
-    .art-prev-title {
-      position: absolute;
-      transform-origin: top left;
-      width: fit-content;
-      white-space: nowrap;
-      max-width: 80vw;
-      left: 0;
-      top: 0;
-      transform: rotate(-90deg) translateX(-100%);
-      font-size: rem(48px);
+    max-height: inherit;
+    overflow: hidden;
+    padding-left: 4.2vw;
+    width: 24vw;
 
-      &:before {
-        content: "";
+      .art-prev-title {
+        // display: none;
         position: absolute;
-        width: 0;
-        height: 0;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: -33px;
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent;
-        border-right: 17px solid $mainFontColor;
+        transform-origin: top left;
+        white-space: nowrap;
+        // max-width: 80vw;
+
+        left: 0;
+        top: 0;
+        transform: rotate(-90deg) translateX(-100%);
+        font-size: 3vw;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: -1.5vw;
+          border-top: 0.8vw solid transparent;
+          border-bottom: 0.8vw solid transparent;
+          border-right: 0.8vw solid $mainFontColor;
+        }
       }
     }
   }
-}
