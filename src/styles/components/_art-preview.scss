@@ -4,11 +4,12 @@
   margin-right: 5vw;
   gap: 3vw;
   max-height: 80vh;
-  
+
   .art-list-box {
+    max-height: inherit;
     position: relative;
     // max-height: inherit;
-    overflow: hidden;
+    // overflow: hidden;
     padding-left: 3.7vw;
     width: 24vw;
 
@@ -39,7 +40,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1030px) {
   .art-prev {
     flex-direction: column;
     padding-top: 20px;
@@ -47,10 +48,6 @@
     max-height: 70vh;
     gap: 2rem;
     .art-list-box {
-      // height: 30vh;
-      // height: fit-content;
-      // max-height: fit-content;
-      // height: 50vh;
       width: inherit;
       padding: 0px;
       padding-top: 2.5rem;
@@ -59,7 +56,6 @@
           border-top: 8px solid transparent;
           border-bottom: 8px solid transparent;
           border-right: 8px solid $mainFontColor;
-          // transform: translate(-50%, -50%);
           transform: rotate(180deg);
           left: 105%;
           top: 30%;
@@ -68,7 +64,7 @@
     }
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1030px) {
   .art-prev {
     .art-list-box {
       .art-prev-title {

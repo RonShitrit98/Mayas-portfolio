@@ -55,7 +55,7 @@ const ART_LIST = [
     id: "d",
     title: "Rabbit, car, and a pine tree.",
     description: `
-          Pastels on brown paper, 50x25 cm
+          Pastels on brown paper, 50x25 cm.
           
           Done as part of “Illustration basics” course at Bezalel Academy, guided by David Polonsky`,
     imgs: [{ url: "./src/assets/imgs/illustrations/6.png" }],

@@ -87,8 +87,9 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1030px) {
   .art-list {
+    max-width: fit-content;
     overflow-x: scroll;
     overflow-y: hidden;
     height: 25vh;
