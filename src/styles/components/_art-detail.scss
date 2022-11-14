@@ -233,7 +233,9 @@
     }
     &.a,
     &.c,
-    &.d {
+    &.d,
+    &.g,
+    &.h {
       .img-box {
         max-height: 55vh;
         max-width: 100%;
