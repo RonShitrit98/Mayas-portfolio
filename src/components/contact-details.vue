@@ -25,10 +25,10 @@
           </div>
           <div class="contact-icons">
             <a href="https://www.instagram.com/maychku/">
-              <img src="../assets/imgs/image 2.png" alt="" />
+              <img src="../assets/imgs/image2.png" alt="" />
             </a>
             <a href="mailto:maya97abr@gmail.com">
-              <img src="../assets/imgs/image 3.png" alt="" />
+              <img src="../assets/imgs/image3.png" alt="" />
             </a>
           </div>
         </div>
