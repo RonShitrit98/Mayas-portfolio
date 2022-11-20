@@ -4,15 +4,17 @@
     <div class="contact-info-box">
       <h1>INFO & CONTACT</h1>
       <div class="info-box">
-        <p>Currently a visual communication student at Bezalel Academy.</p>
-        <p>
-          Experienced in various freelancing works, and 2 years as a graphic
-          designer for the Israeli Navy.
-        </p>
-        <p>
-          Fluent in Procreate, Figma, and Adobe programs such as Photoshop,
-          Illustrator, InDesign, Lightroom, After Effects and Premiere.
-        </p>
+        <div>
+          <p>Currently a visual communication student at Bezalel Academy.</p>
+          <p>
+            Experienced in various freelancing works, and 2 years as a graphic
+            designer for the Israeli Navy.
+          </p>
+          <p>
+            Fluent in Procreate, Figma, and Adobe programs such as Photoshop,
+            Illustrator, InDesign, Lightroom, After Effects and Premiere.
+          </p>
+        </div>
         <div class="contact-info-list">
           <div>
             <img src="../assets/imgs/meee.png" />
@@ -21,7 +23,14 @@
               <p>E-Mail: <span>maya97abr@gmail.com</span></p>
             </div>
           </div>
-          <img src="../assets/imgs/image 2.png" alt="" />
+          <div class="contact-icons">
+            <a href="https://www.instagram.com/maychku/">
+              <img src="../assets/imgs/image 2.png" alt="" />
+            </a>
+            <a href="mailto:maya97abr@gmail.com">
+              <img src="../assets/imgs/image 3.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

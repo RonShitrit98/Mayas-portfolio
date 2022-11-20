@@ -14,6 +14,7 @@
 
 @media screen and (max-width: 1024px) {
   .main-page {
+    height: inherit;
     justify-content: flex-start;
     gap: 100px;
     .main-content{
@@ -21,12 +22,10 @@
     }
     .art-prev,
     .contact-info {
-      height: 80vh;
+      position: absolute;
       opacity: 0;
-      display: none;
       transition: opacity 0.5s;
       &.selected {
-        display: flex;
         opacity: 1;
       }
     }

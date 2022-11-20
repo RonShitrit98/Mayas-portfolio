@@ -22,12 +22,12 @@
       div:first-child {
         display: flex;
         align-items: flex-end;
-      }
-      img:first-child {
-        margin-right: rem(20px);
-        height: 107px;
-        width: 107px;
-        justify-self: flex-start;
+        img:first-child {
+          margin-right: rem(20px);
+          height: 107px;
+          width: 107px;
+          justify-self: flex-start;
+        }
       }
       p {
         margin-bottom: 0px;
@@ -36,9 +36,25 @@
         }
       }
     }
+    .contact-icons {
+      display: flex;
+      gap: 20px;
+      a {
+        &:not(:first-child) {
+          display: none;
+        }
+        img {
+          width: 60px;
+          object-fit: contain;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
   h1 {
-    font-size:rem(35px);
+    font-size: rem(35px);
     position: absolute;
     transform-origin: top left;
     width: fit-content;
@@ -47,5 +63,58 @@
     left: -15px;
     top: 0;
     transform: rotate(-90deg) translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .contact-info {
+    height: fit-content;
+    max-width: fit-content;
+    p {
+      font-size: clamp(rem(18px), 2vh, rem(24px));
+    }
+    .contact-info-box {
+      height: fit-content;
+      max-height: none;
+      .info-box {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+        .contact-info-list {
+          justify-content: center;
+          div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            img {
+              width: 90px;
+              height: 90px;
+              margin-bottom: 10px;
+            }
+            p {
+              text-align: center;
+            }
+          }
+          .contact-icons {
+            position: absolute;
+            bottom: -50px;
+            a {
+              &:last-child {
+                display: block;
+              }
+            }
+            img {
+              height: 55px;
+            }
+          }
+        }
+      }
+    }
+    h1,
+    hr {
+      display: none;
+    }
   }
 }
