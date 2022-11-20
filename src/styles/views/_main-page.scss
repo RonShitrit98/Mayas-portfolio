@@ -24,8 +24,10 @@
     .contact-info {
       position: absolute;
       opacity: 0;
+      visibility: hidden;
       transition: opacity 0.5s;
       &.selected {
+        visibility: visible;
         opacity: 1;
       }
     }
