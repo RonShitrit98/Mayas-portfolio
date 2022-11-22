@@ -22,7 +22,6 @@ export default {
   methods: {
     select(type) {
       this.selected = type;
-      console.log(this.selected)
     },
     getClass(type){
       if (type===this.selected) return 'selected'
