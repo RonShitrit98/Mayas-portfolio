@@ -3,9 +3,9 @@
     <div class="img-box">
       <div v-for="img in group.imgs" :key="img.url">
         <img :src="img.url" alt="" />
-        <p v-if="img.description">
+        <p v-if="img.description" dir="rtl" >
           <span>{{ img.title }}</span> -
-          {{ img.description }}
+          {{ img.description }}.
         </p>
       </div>
     </div>
